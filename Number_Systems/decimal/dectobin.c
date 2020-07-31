@@ -2,22 +2,22 @@
 #include <string.h>
 char dectohex(int dec)
 {
-	static char hex[32];    //20  
+	static char bin[32];    //20  
 	static int i,j;
 	
 	while(dec!=0)
 	{
-		hex[i]=dec%2;
+		bin[i]=dec%2;
 		dec=dec/2;
 		
-		if(hex[i] == 0  )
+		if(bin[i] == 0  )
 		{
-			hex[i]=hex[i]+48;
+			bin[i]=bin[i]+48;
 		//	printf("%c",hex[i]);
 		}
-		else if(hex[i] == 1)
+		else if(bin[i] == 1)
 		{
-			hex[i]=hex[i]+48;
+			bin[i]=bin[i]+48;
 		//	printf("%c",hex[i]);
 		}
 		i++;
@@ -29,12 +29,12 @@ char dectohex(int dec)
 		{
 			printf(" ");
 		}
-		printf("%c",hex[j]);		
+		printf("%c",bin[j]);		
 	}
 
 	
-	//printf(" %d",strlen(hex));
-	//return &hex;
+	//printf(" %d",strlen(bin));
+	//return &bin;
 	
 }
 
