@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 #include <stdlib.h>
 
 /*
@@ -73,4 +73,131 @@ int main()
 
 */
 
+/**************** PART-2 ***********************************************/
+
+
+     //inline function access using ptr
+
+
+/*
+typedef void(*ptr)();
+
+inline void fun()
+{
+    printf("hi");
+}
+
+int main()
+{
+    ptr pf;
+    pf=fun;
+    pf();  //printf("hi");
+    return 0;
+}
+
+*/
+
+/*  //structure mem access
+struct test
+{
+   char a[10];
+   char c;
+   char b:1;
+   char * ptr;
+}o,*p2;
+
+//o.c=22;
+//o.ptr =o.c;
+
+//pf("%d", *o.ptr);
+
+
+//o.p=&o.b;  //invalid no addr bit-field 
+
+
+//o.ptr="hi";  //valid
+////o.a="hi";   //invalid
+//struct test o={"hello",1,"hi"};  //valid
+
+
+
+   
+int main() 
+{ 
+   // o.a="name";
+    strcpy(o.a,"name");
+    o.b=1;
+    o.ptr=&o.b;
+    printf("%d\n",*o.ptr);
+    printf("%s\n",o.a);
+    o.ptr="hello";
+    printf("%s\n",o.ptr);
+    return 0;
+}
+
+*/
+
+
+
+  //sizeof operator used for array parameter
+
+
+void fun(char arr[])
+{
+    printf("%s %d\n",arr,sizeof(arr)); //ans= hello ,not 6
+}
+
+   
+int main() 
+{ 
+    char msg[] ="hello"; 
+    fun(msg);
+    printf("sizeof:%d   strlen:%d\n",sizeof(msg),strlen(msg));  //ans=6 .5
+}
+
+
+/*
+   
+int main() 
+{ 
+    char  p=10;
+    unsigned char *p3=&p;
+    int p2=(int)p;    
+    int  *ptr=&p2;
+    printf("%d ",*ptr);
+    printf("%d ",*p3);
+    return 0;
+}
+*/
+
+/*
+int main() 
+{ 
+
+char  p[] ="hello";
+
+char * ptr=strnd(p,2);
+
+pf("%s,ptr);  //he
+
+}
+
+*/
+
+/*
+   
+int main() 
+{ 
+    char a[10];
+    
+    printf("enter any key \n");
+
+    gets(a);
+    //scanf("%c",&a);
+    
+    printf("%s",a);
+    
+}
+
+*/
 
