@@ -60,7 +60,7 @@ int main()
 	
 	printf("%u\n",swapBits(byte,0,1));  /*bit pos swap */	
 	
-	pos_neg(byte);
+	pos_neg(byte);  /*bit pos neg find */
 	
 	return 0;
 		
