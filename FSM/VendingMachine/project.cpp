@@ -1,31 +1,31 @@
-	#include<iostream>
-	#include<string>
+#include<iostream>
+#include<string>
 	 
-	using namespace std;
+using namespace std;
 	
-	enum VendingMachineState {
+enum VendingMachineState {
 		
-		SELECT,QUANTITY,CALCULATE,UPDATE
-	};
+	SELECT,QUANTITY,CALCULATE,UPDATE
+};
 	
-	enum Brand {
+enum Brand {
 		
-		COKE =100, PEPSI =200, SEVENUP =300
-	};
+	COKE =100, PEPSI =200, SEVENUP =300
+};
  
-  struct Student {
+struct Student {
   	
   	string name;
   	int points;
-  };
+};
   
-  struct Soda {
+struct Soda {
   	
   	Brand brandName;
   	int inventory;
   	int price;
   	
-  };
+};
 
  
 int main()
