@@ -96,7 +96,7 @@ node*deleteNode(node*root,int data)
 			
 			root->data=temp->data;
 			
-			root->right=deleteNode(root->right,data);
+			root->right=deleteNode(root->right,temp->data);
 		}
 	}
 	
